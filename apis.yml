@@ -1,23 +1,72 @@
 aid: timesten
-name: Timesten
-description: Timesten is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+name: TimesTen
+description: TimesTen is an in-memory relational database company that spun out of
+  Hewlett-Packard Labs in Palo Alto in 1996 as TimesTen Performance Software, taking
+  venture backing that included Lightspeed Venture Partners, and was acquired by Oracle
+  Corporation in 2005. The product lives on as Oracle TimesTen In-Memory Database,
+  a persistent, ACID-compliant OLTP database with SQL support, replication, JSON support,
+  and a Kubernetes operator, documented today under Oracle Help Center with releases
+  11.2.2, 18.1, 22.1, and 26.1. The company no longer operates independently and publishes
+  no standalone web API; timesten.com redirects into oracle.com.
 url: https://raw.githubusercontent.com/api-evangelist/timesten/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-productions.s3.amazonaws.com/apis-json-icon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: oracle
+x-acquired-year: '2005'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Databases
+- In-Memory Database
+- Relational Databases
+- Caching
+- Oracle
+- Acquired
 apis: []
+common:
+- type: DomainSecurity
+  url: security/timesten-domain-security.yml
+- name: Website
+  type: Website
+  url: https://www.oracle.com/database/technologies/related/timesten
+- name: Documentation
+  type: Documentation
+  url: https://docs.oracle.com/en/database/other-databases/timesten/
+- name: Release Notes
+  type: ChangeLog
+  url: https://docs.oracle.com/en/database/other-databases/timesten/26.1/release-notes/index.html
+- name: TimesTen Samples on GitHub
+  type: GitHub
+  url: https://github.com/oracle-samples/oracle-timesten-samples
+- name: LLMs.txt
+  type: LLMsTxt
+  url: llms/timesten-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

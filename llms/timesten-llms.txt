@@ -1,0 +1,14 @@
+# TimesTen
+
+> TimesTen is an in-memory relational database company that spun out of Hewlett-Packard Labs in 1996 as TimesTen Performance Software and was acquired by Oracle Corporation in 2005. The product continues as Oracle TimesTen In-Memory Database — a persistent, ACID-compliant OLTP database with SQL, replication, JSON support, and a Kubernetes operator. The company no longer operates independently and publishes no standalone web API; timesten.com redirects into oracle.com.
+
+## Docs
+
+- [Oracle TimesTen product page](https://www.oracle.com/database/technologies/related/timesten): Product overview at Oracle
+- [Oracle TimesTen documentation](https://docs.oracle.com/en/database/other-databases/timesten/): Documentation for releases 11.2.2, 18.1, 22.1, and 26.1
+- [Release 26.1 release notes](https://docs.oracle.com/en/database/other-databases/timesten/26.1/release-notes/index.html): Current release notes
+- [TimesTen samples on GitHub](https://github.com/oracle-samples/oracle-timesten-samples): Official quickstart and sample code
+
+## APIs
+
+- None: TimesTen is a client/server database accessed through SQL and database drivers, not a hosted web API.

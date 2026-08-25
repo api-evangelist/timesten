@@ -1,13 +1,11 @@
 aid: timesten
 name: TimesTen
-description: TimesTen is an in-memory relational database company that spun out of
-  Hewlett-Packard Labs in Palo Alto in 1996 as TimesTen Performance Software, taking
-  venture backing that included Lightspeed Venture Partners, and was acquired by Oracle
-  Corporation in 2005. The product lives on as Oracle TimesTen In-Memory Database,
-  a persistent, ACID-compliant OLTP database with SQL support, replication, JSON support,
-  and a Kubernetes operator, documented today under Oracle Help Center with releases
-  11.2.2, 18.1, 22.1, and 26.1. The company no longer operates independently and publishes
-  no standalone web API; timesten.com redirects into oracle.com.
+description: TimesTen is an in-memory relational database company that spun out of Hewlett-Packard Labs in Palo
+  Alto in 1996 as TimesTen Performance Software, taking venture backing that included Lightspeed Venture Partners,
+  and was acquired by Oracle Corporation in 2005. The product lives on as Oracle TimesTen In-Memory Database, a
+  persistent, ACID-compliant OLTP database with SQL support, replication, JSON support, and a Kubernetes operator,
+  documented today under Oracle Help Center with releases 11.2.2, 18.1, 22.1, and 26.1. The company no longer operates
+  independently and publishes no standalone web API; timesten.com redirects into oracle.com.
 url: https://raw.githubusercontent.com/api-evangelist/timesten/refs/heads/main/apis.yml
 accessModel:
   pricing: unknown
@@ -32,7 +30,7 @@ x-acquired-by: oracle
 x-acquired-year: '2005'
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-21'
 tags:
 - Company
 - Databases
@@ -43,6 +41,11 @@ tags:
 - Acquired
 apis: []
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/oracle/
+  name: Oracle
+  x-relationship: acquisition
+  x-generated-by: oracle-family:2026-08-21
 - type: DomainSecurity
   url: security/timesten-domain-security.yml
 - name: Website
@@ -70,3 +73,5 @@ x-enrichment:
   status: minimal
   artifacts_added: 3
   pass: local-v1
+x-parent: oracle
+x-relationship: acquisition

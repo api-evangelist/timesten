@@ -7,6 +7,17 @@ description: TimesTen is an in-memory relational database company that spun out 
   documented today under Oracle Help Center with releases 11.2.2, 18.1, 22.1, and 26.1. The company no longer operates
   independently and publishes no standalone web API; timesten.com redirects into oracle.com.
 url: https://raw.githubusercontent.com/api-evangelist/timesten/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown

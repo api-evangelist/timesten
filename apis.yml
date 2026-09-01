@@ -29,7 +29,7 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
-image: https://kinlane-productions.s3.amazonaws.com/apis-json-icon.png
+image: ''
 x-type: company
 x-source: vc-portfolio
 x-backed-by:

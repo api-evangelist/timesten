@@ -2,22 +2,24 @@ generated: '2026-07-21'
 method: searched
 source: https://www.timesten.com/.well-known/
 host: https://www.timesten.com
-note: timesten.com blanket-redirects every path (301) to the retired Oracle product
-  URL https://www.oracle.com/database/technologies/related/timesten.html, which returns
-  404; the live product page is the same URL without the .html suffix. No well-known
-  discovery documents are published for this domain.
-documents:
-- path: /.well-known/security.txt
-  status: 301
-  final_status: 404
-  redirects_to: https://www.oracle.com/database/technologies/related/timesten.html
-- path: /.well-known/openid-configuration
-  status: 301
-  final_status: 404
-  redirects_to: https://www.oracle.com/database/technologies/related/timesten.html
-- path: /.well-known/oauth-authorization-server
-  status: 301
-- path: /.well-known/api-catalog
-  status: 301
-- path: /.well-known/ai-plugin.json
-  status: 301
+note: timesten.com blanket-redirects every path (301) to the retired Oracle product URL https://www.oracle.com/database/technologies/related/timesten.html,
+  which returns 404; the live product page is the same URL without the .html suffix. No well-known discovery
+  documents are published for this domain.
+hosts:
+- host: https://www.timesten.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
